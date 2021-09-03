@@ -17,7 +17,8 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = MainViewController()
+        var vc = MainViewController()
+        vc.bind(viewModel: MainViewModel(articleService: ArticleService()))
         self.navigationController.viewControllers = [vc]
     }
 }

@@ -50,7 +50,20 @@ JSON -> Struct 로 직렬화하기 위하여 Codable 프로토콜을 채택합�
 ### 3. API Service
 ---
 
-API 연동을 위한 클래스는 `ArtivleServiceProtol` 을 채택하여 구현합니다.
+API 연동을 위한 클래스는 `APIService` 을 채택하여 구현합니다.
+프로토콜을 활용하여 API 메소드가 변경되었을 때, 유연하게 대응하도록 했습니다.
+<br/><br/>
+
+
+### 4. ViewModel 
+---
+
+APIService 프로토콜을 프로퍼티로 선언하고, 초기화 함수로 받습니다.
+API 메소드들 중에서 해당 프로토콜을 채택하고 있다면, 어떤 것이라도 초기화하여 ViewModel을 생성 가능합니다.
+(실제 프로젝트 진행 시, 최초에 dummy data로 메소드를 구성했다가 추후에 실제 API로 연동하게 될 때, 최소한의 코드 수정으로 viewModel을 구현할 수 있음)
+
+MainViewModel 에서 API를 호출하여 데이터를 가져오고 CellViewModel로 cell에 알맞은 데이터로 변환합니다. (이 때 구조체를 사용했습니다. 이유는 메소드 사용할 일이 없기 때문입니다.)
+
 
 
 
