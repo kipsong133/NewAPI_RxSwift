@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		25DF625526E204C700EF0CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF625426E204C700EF0CE8 /* SceneDelegate.swift */; };
 		25DF625C26E204C900EF0CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DF625B26E204C900EF0CE8 /* Assets.xcassets */; };
 		25DF625F26E204C900EF0CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DF625D26E204C900EF0CE8 /* LaunchScreen.storyboard */; };
+		25DF626E26E206B600EF0CE8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF626D26E206B600EF0CE8 /* AppCoordinator.swift */; };
+		25DF627026E207C300EF0CE8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF626F26E207C300EF0CE8 /* MainViewController.swift */; };
+		25DF627326E2081400EF0CE8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF627226E2081400EF0CE8 /* MainCoordinator.swift */; };
 		92BDB5A267B97A4AF7E35F1E /* Pods_SeflMade_NewRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ECC8474CAB27FA78DE914B /* Pods_SeflMade_NewRx.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +25,9 @@
 		25DF625E26E204C900EF0CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25DF626026E204C900EF0CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DF626626E2051F00EF0CE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		25DF626D26E206B600EF0CE8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		25DF626F26E207C300EF0CE8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25DF627226E2081400EF0CE8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5C409B00FA35C73A1FD46D02 /* Pods-SeflMade_NewRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeflMade_NewRx.debug.xcconfig"; path = "Target Support Files/Pods-SeflMade_NewRx/Pods-SeflMade_NewRx.debug.xcconfig"; sourceTree = "<group>"; };
 		81ECC8474CAB27FA78DE914B /* Pods_SeflMade_NewRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeflMade_NewRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A0B0EAEBD1E100730CB5DB /* Pods-SeflMade_NewRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeflMade_NewRx.release.xcconfig"; path = "Target Support Files/Pods-SeflMade_NewRx/Pods-SeflMade_NewRx.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 		25DF626726E2059B00EF0CE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25DF627126E2080900EF0CE8 /* Main */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,8 +121,18 @@
 		25DF626C26E205CB00EF0CE8 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				25DF626D26E206B600EF0CE8 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		25DF627126E2080900EF0CE8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25DF626F26E207C300EF0CE8 /* MainViewController.swift */,
+				25DF627226E2081400EF0CE8 /* MainCoordinator.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		540753962AD5B5377EB62CFC /* Pods */ = {
@@ -124,7 +141,6 @@
 				5C409B00FA35C73A1FD46D02 /* Pods-SeflMade_NewRx.debug.xcconfig */,
 				B8A0B0EAEBD1E100730CB5DB /* Pods-SeflMade_NewRx.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25DF626E26E206B600EF0CE8 /* AppCoordinator.swift in Sources */,
 				25DF625326E204C700EF0CE8 /* AppDelegate.swift in Sources */,
 				25DF625526E204C700EF0CE8 /* SceneDelegate.swift in Sources */,
+				25DF627326E2081400EF0CE8 /* MainCoordinator.swift in Sources */,
+				25DF627026E207C300EF0CE8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
