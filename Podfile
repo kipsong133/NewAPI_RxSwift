@@ -13,4 +13,7 @@ target 'SeflMade_NewRx' do
   pod 'NSObject+Rx'
   pod 'RxDataSources'
   pod 'RxCoreData'
+  pod 'Alamofire', '~> 5.2'
+  pod 'SDWebImage', '~> 5.0'
+
 end

@@ -2,6 +2,7 @@ PODS:
   - Action (5.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - Alamofire (5.4.3)
   - Differentiator (5.0.0)
   - "NSObject+Rx (5.2.2)":
     - RxSwift (~> 6.2)
@@ -18,18 +19,24 @@ PODS:
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
 
 DEPENDENCIES:
   - Action
+  - Alamofire (~> 5.2)
   - "NSObject+Rx"
   - RxCocoa
   - RxCoreData
   - RxDataSources
   - RxSwift
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Action
+    - Alamofire
     - Differentiator
     - "NSObject+Rx"
     - RxCocoa
@@ -37,9 +44,11 @@ SPEC REPOS:
     - RxDataSources
     - RxRelay
     - RxSwift
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
@@ -47,7 +56,8 @@ SPEC CHECKSUMS:
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
 
-PODFILE CHECKSUM: e05fa843a3e4631b96a4e3d61889205b544f6197
+PODFILE CHECKSUM: 917f8dca3c5f514145d4525f2e29a566eb71d2d7
 
 COCOAPODS: 1.11.0.beta.2
